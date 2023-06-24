@@ -7,7 +7,7 @@ body {
     color: #333; /* Dark gray text color */
   }
   
-  h1, h2, h3, h4 {
+  h1, h2, h3 {
     color: #165b8e; /* Dark blue heading color */
   }
   
@@ -76,5 +76,20 @@ body {
     color: #ffffff; /* White text color */
     padding: 20px;
     text-align: center;
+  }
+  
+  /* New Styles for Progress Bar */
+  .skill {
+    display: flex;
+    align-items: center;
+  }
+  
+  .fill {
+    height: 20px; /* Adjust the height as desired */
+    background-color: #165b8e; /* Dark blue fill color */
+  }
+  
+  span {
+    margin-left: 10px; /* Adds spacing between the progress bar and skill text */
   }
   
