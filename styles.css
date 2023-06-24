@@ -93,3 +93,21 @@ body {
     margin-left: 10px; /* Adds spacing between the progress bar and skill text */
   }
   
+  /* New Styles for Project Images */
+.project-media {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project-media img {
+    width: calc(20% - 10px); /* Adjust the width as desired */
+    margin-right: 10px; /* Adds spacing between the images */
+    margin-bottom: 10px; /* Adds spacing between the rows */
+  }
+  
+  /* New Styles for Project Video */
+  .project-media video {
+    width: calc(20% - 10px); /* Adjust the width as desired */
+    margin-right: 10px; /* Adds spacing between the videos */
+    margin-bottom: 10px; /* Adds spacing between the rows */
+  }
