@@ -100,6 +100,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end; /* Align to the right */
+    width: calc(40%); /* Adjust the width as desired */
     margin-left: 20px; /* Adds spacing between the text and media */
   }
 
@@ -108,7 +109,7 @@ body {
  
   .project-media img,
   .project-media video {
-    width: calc(25% - 10px); /* Adjust the width as desired */
+    width: calc(100%); /* Adjust the width as desired */
     margin-bottom: 10px; /* Adds spacing between the media elements */
     margin-right: 10px; /* Adds spacing between the videos */
 
