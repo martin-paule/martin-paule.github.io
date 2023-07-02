@@ -16,6 +16,11 @@ body {
     text-decoration: none;
   }
   
+  skilltype {
+    color: #165b8e; /* Dark blue heading color */
+  }
+  
+
   a:hover {
     text-decoration: underline;
   }
