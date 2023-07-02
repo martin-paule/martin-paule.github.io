@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martin Paule - Portfolio Website</title>
   <link rel="stylesheet" href="styles.css"> 
+  <script src="script.js"></script> <!-- Link the script.js file -->
+
 </head>
 <body>
   <header>
@@ -27,61 +29,82 @@
 
       <h3>Skills</h3> 
       <h4>Programming Languages</h4>
-      <ul>
+      <ul><!-- List of Programming languages -->
         <li>
           <div class="skill">
             <skilltype>C++</skilltype>
             <div class="fill" style="width: 75%; background-color: #1ce007;"></div>
-            <span>(Good - Primary programming language)</span>
+            <span>(Good)</span>
           </div>
         </li>
         <li>
             <div class="skill">
               <skilltype>C#, Python</skilltype>
-              <div class="fill" style="width: 50%; background-color: #fbff06;"></div>
-              <span>(Intermediate - Used occasionally)</span>
+              <div class="fill" style="width: 50%; background-color: #ff9b06;"></div>
+              <span>(Intermediate)</span>
             </div>
         </li>
         <li>
             <div class="skill">
               <skilltype>HTML, CSS, SQL, JavaScript</skilltype>
-              <div class="fill" style="width: 25%; background-color: #ff9b06;"></div>
-              <span>(Beginner - Used, but not a lot)</span>
+              <div class="fill" style="width: 25%; background-color: #ff1639;"></div>
+              <span>(Limited Experience)</span>
             </div>
         </li>
+      </ul>
+      <h4>Game Engines</h4>
+      <ul><!-- List of Engines -->
+        <li>
+          <div class="skill">
+            <skilltype>Unreal Engine</skilltype>
+            <div class="fill" style="width: 75%; background-color: #1ce007;"></div>
+            <span>(Good)</span>
+          </div>
+        </li>
+        <li>
+            <div class="skill">
+              <skilltype>Unity</skilltype>
+              <div class="fill" style="width: 50%; background-color: #ff9b06;"></div>
+              <span>(Intermediate)</span>
+            </div>
+        </li>
+
       </ul>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>Super-Serious-Space-Shooter</h3>
-            <div class="project-details">
-                <div class="project-text">
-
-                  <h4>Main Focus:</h4>
-                  <p>Creating a simple game slice. </p>
-
-                  <h4>Development Environment:</h4>
-                  <p>C++, SFML library</p>
-
-                  <h4>Description:</h4>
-                  <p>SSSS is an original game, made as a final project in 1st year  at Abertay University. It is purely written in C++, wihout the use of any engines.</p>
-  
-                    
-                </div>
-                <div class="project-media">
-                <video controls>
-                    <source src="videos/ssss.mp4" type="video/mp4">
-                </video>
-                <img src="images/SSSS/Main_Menu.png" alt="Image 1"> 
-                <img src="images/SSSS/in_game.png" alt="Image 2"> 
-                <img src="images/SSSS/Upgrade_Screen.png" alt="Image 3">
-                </div>
-            </div>
+      <h2>Projects</h2>
+      <div class="project">
+        <div class="project-header">
+          <h3>Super-Serious-Space-Shooter (2019)</h3>
+          <button class="collapse-button">^</button>
         </div>
-        <!-- Add more project divs with the same structure -->
-      </section>
+        <div class="project-details">
+          <div class="project-text">
+            <h4>Main Focus:</h4>
+            <p>Creating a simple game slice.</p>
+            <h4>Development Environment:</h4>
+            <p>C++, SFML library</p>
+            <h4>Description:</h4>
+            <p>SSSS is an original game, made as a final project in the 1st year at Abertay University. It is purely written in C++, without the use of any engines.</p>
+            <h4>Notable Features:</h4>
+            <p>Original audio & sprites</p>
+            <h4>Download (Source Code & Executable):</h4>
+            <a href="https://github.com/martin-paule/Super-Serious-Space-Shooter" target="_blank">Download</a>
+          </div>
+          <div class="project-media">
+            <video controls>
+              <source src="videos/ssss.mp4" type="video/mp4">
+            </video>
+            <img src="images/SSSS/Main_Menu.png" alt="Image 1">
+            <img src="images/SSSS/in_game.png" alt="Image 2">
+            <img src="images/SSSS/Upgrade_Screen.png" alt="Image 3">
+          </div>
+        </div>
+      </div>
+      <!-- Add more project divs with the same structure -->
+    </section>
+    
 
     <section id="contact">
       <h2>Contact Me</h2>
