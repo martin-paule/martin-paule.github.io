@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projectDivs = document.querySelectorAll('.project');
-  
+
+  const circle = new Circle('circle', 5, 50);
+
+  document.head.appendChild(circleScript);
+
+
+
     projectDivs.forEach((projectDiv) => {
       const header = projectDiv.querySelector('.project-header');
       const details = projectDiv.querySelector('.project-details');
@@ -30,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
       
     });
 
-    
     
   });
   
