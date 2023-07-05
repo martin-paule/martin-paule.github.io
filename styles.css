@@ -25,6 +25,8 @@ body {
   }
   
 
+
+  
   #circle {
     position: absolute;
     width: 50px;
@@ -159,15 +161,15 @@ body {
     font-size: 24px;
     cursor: pointer;
     outline: none;
-
     background-color: #165b8e; /* Change background color */
     color: #ffffff; /* Change text color */
-
+    transition: transform 0.3s ease; /* Add transition for smooth transform */
   }
+  
   .collapse-button.collapsed {
     transform: rotate(180deg); /* Rotate the button symbol */
-    
   }
+  
 
   .collapsed .project-details {
     display: flex;
@@ -245,3 +247,55 @@ body {
   object-fit: contain;
 }
 
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #A4E8BA; /* Light corporate green fill */
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #4CA168; /* Darker corporate green outline */
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #7DD897; /* Lighter shade on hover */
+  border-color: #3F7C54; /* Darker shade on hover */
+}
+
+.info-tooltip {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #409EEC; /* Blue fill color */
+  color: #FFF;
+  border: 2px solid #1C6FAF; /* Darker blue outline */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  cursor: help;
+  margin-left: 10px;
+}
+
+.info-tooltip::before {
+  content: attr(data-tooltip); /* Added content property */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #333;
+  color: #FFF;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.info-tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}

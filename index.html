@@ -77,34 +77,33 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <div class="project">
-        <div class="project-header">
-          <h3>Super-Serious-Space-Shooter (2019)</h3>
-          <button class="collapse-button">^</button>
-        </div>
-        <div class="project-details">
-          <div class="project-text">
-            <h4>Main Focus:</h4>
-            <p>Creating a simple game slice.</p>
-            <h4>Development Environment:</h4>
-            <p>C++, SFML library</p>
-            <h4>Description:</h4>
-            <p>SSSS is an original game, made as a final project in the 1st year at Abertay University. It is purely written in C++, without the use of any engines.</p>
-            <h4>Notable Features:</h4>
-            <p>Original audio & sprites</p>
-            <h4>Download (Source Code & Executable):</h4>
-            <a href="https://github.com/martin-paule/Super-Serious-Space-Shooter" target="_blank">Download</a>
+      <template id="project-template">
+        <div class="project">
+          <div class="project-header">
+            <h3 class="project-title"></h3>
+            <button class="collapse-button">^</button>
           </div>
-          <div class="project-media">
-            <video controls>
-              <source src="videos/ssss.mp4" type="video/mp4">
-            </video>
-            <img src="images/SSSS/Main_Menu.png" alt="Image 1">
-            <img src="images/SSSS/in_game.png" alt="Image 2">
-            <img src="images/SSSS/Upgrade_Screen.png" alt="Image 3">
+          <div class="project-details">
+            <div class="project-text">
+              <h4>Main Focus:</h4>
+              <p class="main-focus"></p>
+              <h4>Development Environment:</h4>
+              <p class="development-environment"></p>
+              <h4>Description:</h4>
+              <p class="description"></p>
+              <h4>Notable Features:</h4>
+              <p class="notable-features"></p>
+              <h4>Download (Source Code & Executable):</h4>
+              <a href="" target="_blank" class="download-button">Download</a>
+              <span class="info-tooltip" data-tooltip="Link goes to my GitHub website">?</span>
+            </div>
+            <div class="project-media"></div>
           </div>
         </div>
-      </div>
+      </template>
+      
+      <div id="projects-container"></div>
+      
       <!-- Add more project divs with the same structure -->
     </section>
     
