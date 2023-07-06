@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  const circle = new Circle('circle', 5, 50);
-
   const projectTemplate = document.getElementById('project-template');
   const projectsContainer = document.getElementById('projects-container');
 
@@ -40,26 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   ];
 
+  /*function for setting  data of projects's data element*/
   const setProjectData = (element, value) => {
     if (element) {
       element.textContent = value;
     }
   };
-
-  const collapseButtonHandler = (projectDiv) => {
-    const details = projectDiv.querySelector('.project-details');
-    const collapseButton = projectDiv.querySelector('.collapse-button');
-
-    // Add the collapsed class to the elements by default
-    details.classList.add('collapsed');
-    collapseButton.classList.add('collapsed');
-
-    collapseButton.addEventListener('click', () => {
-      details.classList.toggle('collapsed');
-      collapseButton.classList.toggle('collapsed');
-    });
-  };
-
+  
+  /*set all project#s data from array above*/
   projectsData.forEach((projectData) => {
     const projectClone = projectTemplate.content.cloneNode(true);
 
@@ -102,40 +88,32 @@ document.addEventListener('DOMContentLoaded', () => {
     projectsContainer.appendChild(projectClone);
   });
 
-  document.head.appendChild(circleScript);
+  /* HANDLE RESIZING OF IMAGES WITH CLICK*/
+  const projectDivs = document.querySelectorAll('.project');
+  projectDivs.forEach((projectDiv) => {
+    const collapseButton = projectDiv.querySelector('.collapse-button');
+    const details = projectDiv.querySelector('.project-details');
 
+    collapseButton.addEventListener('click', () => {
+      projectDiv.classList.toggle('collapsed');
+      details.classList.toggle('collapsed');
+      collapseButton.classList.toggle('collapsed');
+    });
 
+    const mediaItems = projectDiv.querySelectorAll('.project-media img, .project-media video');
 
-    projectDivs.forEach((projectDiv) => {
-      const header = projectDiv.querySelector('.project-header');
-      const details = projectDiv.querySelector('.project-details');
-      const media = projectDiv.querySelector('.project-media');
-      const collapseButton = projectDiv.querySelector('.collapse-button');
-  
-
-      collapseButton.addEventListener('click', () => {
-        projectDiv.classList.toggle('collapsed');
-        details.classList.toggle('collapsed');
-        collapseButton.classList.toggle('collapsed');
-      });
-      
-
-
-      
-      
-      const mediaItems = projectDiv.querySelectorAll('.project-media img, .project-media video');
-
-        mediaItems.forEach((mediaItem) => {
-        mediaItem.addEventListener('click', () => {
+    mediaItems.forEach((mediaItem) => {
+      mediaItem.addEventListener('click', () => {
         mediaItem.classList.toggle('maximized');
         projectDiv.classList.toggle('media-maximized');
         document.body.classList.toggle('no-scroll');
       });
     });
-      
-    });
-
-    
   });
-  
-  
+});
+
+
+
+
+
+
