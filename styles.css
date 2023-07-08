@@ -1,6 +1,13 @@
 span {
   
   }
+
+
+  .container {
+    display: flex;
+    align-items: center; /* Vertically center the elements */
+  }
+
 /* --- STYLES FOR PROJECTS --- */
 
 
@@ -9,7 +16,7 @@ span {
   padding: 15px;
   margin-bottom: 15px;
 
-  border-radius: 24px;
+  border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 }
 
@@ -37,6 +44,8 @@ span {
 
 }
 
+
+
 .project-details {
   display:flex;
 
@@ -56,6 +65,10 @@ span {
   background-color: #165b8e; /* Change background color */
   color: #ffffff; /* Change text color */
   transition: transform 0.3s ease; /* Add transition for smooth transform */
+  border-radius: 20px;
+  padding-top: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .collapse-button.collapsed {
@@ -106,6 +119,8 @@ span {
 
   width: 50%;
   opacity: 1; /* Set initial opacity */
+  border:none;
+  border-radius: 10px;
 
 }
 
@@ -144,18 +159,23 @@ object-fit: contain;
 .download-button {
 display: inline-block;
 padding: 10px 20px;
-background-color: #A4E8BA; /* Light corporate green fill */
 color: #FFF;
 text-decoration: none;
 font-weight: bold;
-border: 2px solid #4CA168; /* Darker corporate green outline */
 border-radius: 4px;
 transition: background-color 0.3s ease, border-color 0.3s ease;
+
+background-color: #7DD897; /* Lighter shade on hover */
+border: 2px solid #3F7C54; /* Darker corporate green outline */
+
 }
 
 .download-button:hover {
-background-color: #7DD897; /* Lighter shade on hover */
-border-color: #3F7C54; /* Darker shade on hover */
+
+
+background-color: #A4E8BA; /* Light corporate green fill */
+border: 2px solid #4CA168; /* Darker corporate green outline */
+
 }
 
 .info-tooltip {

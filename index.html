@@ -5,13 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martin Paule - Portfolio Website</title>
   <link rel="stylesheet" href="styles.css"> 
-  <script src="script.js"></script> <!-- Link the script.js file -->
+  <script src="script.js"></script> 
+  <script src="projects.js"></script>
+  <script src="events.js"></script> 
+
 
 </head>
 <body>
 
   <header>
-    <h1>Martin Paule ( ! WEBSITE UNDER CONSTRUCTION ! )</h1> 
+
+    <div class="container">
+
+      <h1>Martin Paule ( ! WEBSITE UNDER CONSTRUCTION ! )</h1> 
+      <img src="gifs/PurpBuilder.gif" alt="Example GIF">
+    </div>
+
+
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -24,13 +34,13 @@
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>Hello! I am Martin, a recent graduate of the Computer Game Application Development course on Abertay University.</p>
+      <p>Hello! I am Martin, a recent first-class degree graduate of the Computer Game Application Development course on Abertay University.</p>
       <p>I have experience in various areas of game dev, such as AI, AR, Networking, Graphics Programming, Tools Programming, etc.</p>
       <p>Below You can find more information about me, my skillset, as well as my past projects.</p>
 
       <h3>Skills</h3> 
       <h4>Programming Languages</h4>
-      <ul><!-- List of Programming languages -->
+      <ul>
         <li>
           <div class="skill">
             <skilltype>C++</skilltype>
@@ -93,9 +103,8 @@
               <p class="description"></p>
               <h4>Notable Features:</h4>
               <p class="notable-features"></p>
-              <h4>Download (Source Code & Executable):</h4>
+              <h4 class = "download-vers"></h4>
               <a href="" target="_blank" class="download-button">Download</a>
-              <span class="info-tooltip" data-tooltip="Link goes to my GitHub website">?</span>
             </div>
             <div class="project-media"></div>
           </div>
