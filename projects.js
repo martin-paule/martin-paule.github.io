@@ -22,10 +22,10 @@ const projectsData = [
     {
       title: 'PixelMazed (2021)',
       mainFocus: 'Implement 3D collisions by utilizing 2D boxes.',
-      developmentEnvironment: 'OpenGL (SDL)',
-      description: 'PixelMazed is an original game, made in 2nd year at Abertay University. It is done entirely in c++ and there various notable features done in addition ofthe original scope of the project.',
+      developmentEnvironment: 'C++, OpenGL (SDL)',
+      description: 'PixelMazed is an original game. It is done entirely in c++ and there various notable features within this project, such as a dynamically updated fog-of-war minimap, as well as random dungeon generation.',
       notableFeatures: 'Randomly generated dungeon, Minimap updating in real-time, Original audio & sprites',
-      downloadVers: 'Github Download (Source Code):',
+      downloadVers: 'Github Download (Source Code & Executable):',
       downloadLink: 'https://github.com/martin-paule/PixelMazed',
       media: {
         images: [
@@ -37,13 +37,13 @@ const projectsData = [
       }
     },
     {
-      title: 'Genetic Learning (2020)',
-      mainFocus: 'AI.',
+      title: 'Genetic Learning (2022)',
+      mainFocus: 'Artifitial Intelligence',
       developmentEnvironment: 'C#, Unity',
-      description: 'AIIIIIIIIIIIIIIIIIIIIII',
-      notableFeatures: 'Data Recording, AI',
+      description: 'In this Unity project, there are several simulations of a simple "thrive" environment. The goal is for the program to find an optimal combination of humans and their distribution of perk points into various stats.',
+      notableFeatures: 'extensive UI, data recording',
       downloadVers: 'Github Download (Source Code):',
-      downloadLink: 'https://github.com/TheBigPaws/AR_Application',
+      downloadLink: 'https://github.com/martinpaule/Genetic_Learning',
       media: {
         images: [
           'images/SSSS/Main_Menu.png',
@@ -61,6 +61,74 @@ const projectsData = [
       notableFeatures: 'Augmented Reality, Resource Managment, Visual Effects',
       downloadVers: 'Github Download (Source Code):',
       downloadLink: 'https://github.com/TheBigPaws/AR_Application',
+      media: {
+        images: [
+          'images/SSSS/Main_Menu.png',
+          'images/SSSS/in_game.png',
+          'images/SSSS/Upgrade_Screen.png'
+        ],
+        video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
+      }
+    },
+    {
+      title: 'Dissertation Artefact (2023)',
+      mainFocus: 'N-body gravitational simulation using Barnes-Hut',
+      developmentEnvironment: 'Unreal Engine, C++',
+      description: 'Dissertation Artefact for the Computer Game Application Development course on Abertay University. This project explores the implementation of the Barnes-Hut algorithm to tackle the N-Body Problem. This framework is then applied into- and evaluated in the context of videogames',
+      notableFeatures: 'Barnes-Hut algoruthm, extensive UI, sandbox and videogame example',
+      downloadVers: 'Github Download (Source Code):',
+      downloadLink: 'https://github.com/martinpaule/DissertationProject',
+      media: {
+        images: [
+          'images/SSSS/Main_Menu.png',
+          'images/SSSS/in_game.png',
+          'images/SSSS/Upgrade_Screen.png'
+        ],
+        video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
+      }
+    },
+    {
+      title: 'Tools Programming (2023)',
+      mainFocus: 'Tools development',
+      developmentEnvironment: 'C++, MFC, SQL',
+      description: 'This project has been developed for the Tools Programming (CMP405) module in Abertay university. It adds various functionality to an initially empty, basic project.',
+      notableFeatures: 'Terrain Editing & Painting, Object Manipulation, Windows MFC',
+      downloadVers: 'Github Download (Source Code):',
+      downloadLink: 'https://github.com/martinpaule/ToolsProgramming',
+      media: {
+        images: [
+          'images/SSSS/Main_Menu.png',
+          'images/SSSS/in_game.png',
+          'images/SSSS/Upgrade_Screen.png'
+        ],
+        video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
+      }
+    },
+    {
+      title: 'Networking Tanks (2021)',
+      mainFocus: 'Developing a netowrked application',
+      developmentEnvironment: 'C++, SFML library',
+      description: 'Final project for a Networking module at 3rd year CGAD at Abertay. The network connects using TCP sockets on a peer-to-peer server structure',
+      notableFeatures: 'peer-to-peer, interpolation, predition',
+      downloadVers: 'Github Download (Source Code):',
+      downloadLink: 'https://github.com/martinpaule/Networking_Project',
+      media: {
+        images: [
+          'images/SSSS/Main_Menu.png',
+          'images/SSSS/in_game.png',
+          'images/SSSS/Upgrade_Screen.png'
+        ],
+        video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
+      }
+    },
+    {
+      title: 'Parallelized Image Editor (2021)',
+      mainFocus: 'Investigate CPU and GPU parallelization',
+      developmentEnvironment: 'C++',
+      description: 'This application was made as a final project for 2nd year Parallel Computing course at Abertay University. It is an image editing library, that takes advantage of both GPU and CPU parallelization',
+      notableFeatures: 'parallelization, multithreading, image editing',
+      downloadVers: 'Github Download (Source Code):',
+      downloadLink: 'https://github.com/martinpaule/Parallel-Image-Edit',
       media: {
         images: [
           'images/SSSS/Main_Menu.png',
