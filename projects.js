@@ -140,6 +140,9 @@ const projectsData = [
     },
   ];
 
+
+  
+
   /*function for setting  data of projects's data element*/
   const setProjectData = (element, value) => {
     if (element) {
@@ -195,4 +198,15 @@ const projectsData = [
 
     projectsContainer.appendChild(projectClone);
   });
+  
+  const projects = projectsContainer.querySelectorAll('.project');
+
+  
+
+  projects.forEach((project, index) => {
+    if (index >= 3) {
+      project.classList.add('hidden');
+    }
+  });
+
 };

@@ -25,10 +25,10 @@
   }
   @keyframes expandProjDiv {
     0% {
-      transform: scaleY(0%) /* Initial position */
+      transform: translateY(-100%) /* Initial position */
     }
     100% {
-      transform: scaleY(100%) /* Initial position */
+      transform: translateY(0%) /* Initial position */
     }
     }
   @keyframes CollapseProjDiv {
@@ -48,6 +48,8 @@
   }
 
 /* --- STYLES FOR PROJECTS --- */
+
+
 
 
 .project {
@@ -85,15 +87,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start; /* Align to the right */
-  width: calc(40%); /* Adjust the width as desired */
-  
+  display:flex;
+  width:23%;
   
 }
 
 
 .project-media img,
 .project-media video {
-  width: calc(100%); /* Adjust the width as desired */
+  width: 100%; /* Adjust the width as desired */
   margin-bottom: 10px; /* Adds spacing between the media elements */
   margin-right: 10px; /* Adds spacing between the videos */
   transition: opacity 0.8s ease; /* Add transition for smooth opacity change */
@@ -104,12 +106,25 @@
 
 }
 
+.project.hidden {
+  display: none;
+}
+
+.show-more-button {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  font-size: 22px;  
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
 
 .collapsed .project-media img,
 .collapsed .project-media video {
-  transform: translateX(0); /* Set initial position */
 
-  width: 50%;
   opacity: 1; /* Set initial opacity */
   border:none;
   border-radius: 10px;
@@ -135,7 +150,8 @@
 
 .project-text {
   flex: 0 0 70%; /* Set a fixed width of 60% */
-  
+  animation: expandProjDiv 0.4s ease; /* Apply the animation */
+
 }
 
 .collapse-button {
@@ -283,6 +299,7 @@ visibility: visible;
 /* --- GENERAL STYLES --- */
 
 body {
+  
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -353,7 +370,7 @@ footer {
 
 /* Main Section Styles */
 main {
-  max-width: 960px;
+  max-width: calc(50%);
   margin: 20px auto;
   padding: 0 20px;
 }
