@@ -1,6 +1,45 @@
-span {
-  
+/* --- KEYFRAME ANIMATIONS --- */
+
+/* Animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(0%); /* Initial position */
   }
+  50% {
+    transform: translateY(20%); /* Final position */
+  }
+  100% {
+    transform: translateY(0%); /* Final position */
+  }
+  }
+  @keyframes slideRight {
+  0% {
+    transform: translateX(0%); /* Initial position */
+  }
+  50% {
+    transform: translateX(-10%); /* Initial position */
+  }
+  100% {
+    transform: translateX(0%); /* Final position */
+  }
+  }
+  @keyframes expandProjDiv {
+    0% {
+      transform: scaleY(0%) /* Initial position */
+    }
+    100% {
+      transform: scaleY(100%) /* Initial position */
+    }
+    }
+  @keyframes CollapseProjDiv {
+    0% {
+      transform: scaleY(100%) /* Initial position */
+    }
+    100% {
+      transform: scaleY(0%) /* Initial position */
+    }
+    }
+  
 
 
   .container {
@@ -18,6 +57,17 @@ span {
 
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+
+  transition: max-height 0.5s ease; /* Add transition for smooth resizing */
+  overflow: hidden; /* Hide the content when collapsed */
+  max-height: fit-content; /* Set max-height to fit content */
+
+}
+
+.collapsed .project {
+  transition: max-height 0.5s ease; /* Add transition for smooth resizing */
+  max-height: fit-content; /* Set max-height to fit content */
+
 }
 
 .project-media {
@@ -27,12 +77,18 @@ span {
   justify-content: flex-end; /* Align to the right */
   margin-left: 20px; /* Adds spacing between the text and media */
 
-  transition: all 0.8s ease; /* Add transition for smooth interpolation */
-  animation: slideRight 0.8s ease; /* Apply the animation */
 
+  
 }
 
-
+.collapsed .project-media {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; /* Align to the right */
+  width: calc(40%); /* Adjust the width as desired */
+  
+  
+}
 
 
 .project-media img,
@@ -41,75 +97,11 @@ span {
   margin-bottom: 10px; /* Adds spacing between the media elements */
   margin-right: 10px; /* Adds spacing between the videos */
   transition: opacity 0.8s ease; /* Add transition for smooth opacity change */
+  border-radius: 10px;
 
-}
+  animation: slideRight 0.5s ease; /* Apply the animation */
+  animation-delay: calc(var(--delay-index) * 0.1s);
 
-
-
-.project-details {
-  display:flex;
-
-
-}
-
-.project-text {
-  flex: 0 0 70%; /* Set a fixed width of 60% */
-}
-
-.collapse-button {
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  outline: none;
-  background-color: #165b8e; /* Change background color */
-  color: #ffffff; /* Change text color */
-  transition: transform 0.3s ease; /* Add transition for smooth transform */
-  border-radius: 20px;
-  padding-top: 8px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.collapse-button.collapsed {
-  transform: rotate(180deg); /* Rotate the button symbol */
-}
-
-
-.collapsed .project-details {
-  display: flex;
-}
-
-.collapsed .project-text {
-  display: none;
-}
-
-.collapsed .project-media {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start; /* Align to the right */
-  animation: slideUp 0.8s ease; /* Apply the animation */
-  width: calc(40%); /* Adjust the width as desired */
-
-
-}
-
-/* Animation */
-@keyframes slideUp {
-0% {
-  transform: translateY(100%); /* Initial position */
-}
-100% {
-  transform: translateY(0%); /* Final position */
-}
-}
-@keyframes slideRight {
-0% {
-  transform: translateX(-50%); /* Initial position */
-}
-100% {
-  transform: translateX(0%); /* Final position */
-}
 }
 
 
@@ -121,8 +113,61 @@ span {
   opacity: 1; /* Set initial opacity */
   border:none;
   border-radius: 10px;
+  transition: opacity 4s ease; /* Add transition for smooth opacity change */
+  transform: translateY(0%); /* Initial position */
+
+  animation: slideUp 0.5s ease; /* Apply the animation */
+  animation-delay: calc(var(--delay-index) * 0.1s);
 
 }
+
+
+.project-details {
+  display:flex;
+
+
+}
+
+.collapsed .project-details {
+  display: flex;
+
+}
+
+.project-text {
+  flex: 0 0 70%; /* Set a fixed width of 60% */
+  
+}
+
+.collapse-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;  
+  cursor: pointer;
+  outline: none;
+  background-color: #165b8e; /* Change background color */
+  color: #ffffff; /* Change text color */
+  transition: transform 0.5s ease; /* Add transition for smooth transform */
+  border-radius: 20px;
+  padding-top: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.collapse-button.collapsed {
+  transform: rotate(180deg); /* Rotate the button symbol */
+}
+
+
+
+
+
+.collapsed .project-text {
+  display: none;
+}
+
+
+
+
 
 .project-header {
   display: flex;
