@@ -199,14 +199,29 @@ const projectsData = [
     projectsContainer.appendChild(projectClone);
   });
   
-  const projects = projectsContainer.querySelectorAll('.project');
 
   
+  const projects = projectsContainer.querySelectorAll('.project');
 
   projects.forEach((project, index) => {
     if (index >= 3) {
       project.classList.add('hidden');
+      
     }
+    
+
+
+
   });
 
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
 };

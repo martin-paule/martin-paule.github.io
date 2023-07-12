@@ -26,9 +26,11 @@
   @keyframes expandProjDiv {
     0% {
       transform: translateY(-100%) /* Initial position */
+      
     }
     100% {
       transform: translateY(0%) /* Initial position */
+
     }
     }
   @keyframes CollapseProjDiv {
@@ -50,7 +52,25 @@
 /* --- STYLES FOR PROJECTS --- */
 
 
+#projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+#screenshot-container {
+  position: relative;
+  overflow: hidden;
+
+
+}
+
+#screenshot {
+  width: fit-content;
+
+  
+}
 
 .project {
   background-color: #ffffff; /* White project background */
@@ -61,10 +81,12 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow effect */
 
   transition: max-height 0.5s ease; /* Add transition for smooth resizing */
-  overflow: hidden; /* Hide the content when collapsed */
   max-height: fit-content; /* Set max-height to fit content */
+  animation: expandProjDiv 0.4s ease; /* Apply the animation */
 
 }
+
+
 
 .collapsed .project {
   transition: max-height 0.5s ease; /* Add transition for smooth resizing */
@@ -118,7 +140,8 @@
   text-align: center;
   cursor: pointer;
   border-radius: 10px;
-
+  
+  
 }
 
 
@@ -128,8 +151,6 @@
   opacity: 1; /* Set initial opacity */
   border:none;
   border-radius: 10px;
-  transition: opacity 4s ease; /* Add transition for smooth opacity change */
-  transform: translateY(0%); /* Initial position */
 
   animation: slideUp 0.5s ease; /* Apply the animation */
   animation-delay: calc(var(--delay-index) * 0.1s);
@@ -140,6 +161,7 @@
 .project-details {
   display:flex;
 
+  overflow: hidden; /* Hide the content when collapsed */
 
 }
 
@@ -148,9 +170,13 @@
 
 }
 
+
+
 .project-text {
-  flex: 0 0 70%; /* Set a fixed width of 60% */
+  flex: 0 0 70%; /* Set a fixed width of 70% */
   animation: expandProjDiv 0.4s ease; /* Apply the animation */
+  overflow: hidden;
+
 
 }
 
@@ -179,6 +205,7 @@
 
 .collapsed .project-text {
   display: none;
+  
 }
 
 

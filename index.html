@@ -8,9 +8,10 @@
   <script src="script.js"></script> 
   <script src="projects.js"></script>
   <script src="events.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.0/html2canvas.min.js"></script>
 
 
-</head>
+</head> 
 <body>
 
   <header>
@@ -113,7 +114,75 @@
           </div>
         </div>
       </template>
-      
+
+      <div class="project collapsed hidden">
+        <div class="project-header">
+          <h3>And of course... this website :D</h3>
+          <button class="collapse-button collapsed">^</button>
+        </div>
+        <div class="project-details collapsed">
+          <div class="project-text" style="flex: 0 0 100%;">
+            <h4>Main Focus:</h4>
+            <p> Developing a portfolio website, alongside improving personal programming skills</p>
+            <h4>Development Environment:</h4>
+            <p> HTML, CSS, JavaScript</p>
+            <h4>Github Download (Source Code):</h4>
+            <a href="https://github.com/martinpaule/martinpaule.github.io" target="_blank" class="download-button">Download</a>
+            <h4>Notable Features:</h4>
+            <p> Instead of talking about things</p>
+
+            <div id="screenshot-container">
+
+              <canvas id="screenshot" ></canvas>
+            </div>
+          
+          
+            <script>
+           function captureScreen() {
+      var containerWidth = document.documentElement.clientWidth;
+      var screenshotCanvas = document.getElementById("screenshot");
+
+      var dispRatio = window.innerHeight / window.innerWidth;
+      screenshotCanvas.width = containerWidth * 0.6;
+      screenshotCanvas.height = screenshotCanvas.width * dispRatio;
+
+      html2canvas(document.documentElement, {
+        allowTaint: true,
+        useCORS: true,
+        scrollY: window.scrollY
+      }).then(function(canvas) {
+        var screenshotCanvas = document.getElementById("screenshot");
+        var screenshotContext = screenshotCanvas.getContext("2d");
+
+        // Calculate vertical position as a percentage of overall scrollable height
+        var containerHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var verticalPositionPercentage = window.scrollY / containerHeight;
+
+        // Calculate the actual vertical position in the screenshot canvas
+        var screenshotVerticalPosition = verticalPositionPercentage * (canvas.height - screenshotCanvas.height);
+
+        // Calculate the horizontal scale factor
+        var horizontalScale = screenshotCanvas.width / canvas.width;
+
+        // Adjust the screenshot canvas width and height to match the canvas dimensions
+        screenshotCanvas.width = canvas.width * horizontalScale;
+        screenshotCanvas.height = canvas.height * horizontalScale;
+
+        screenshotContext.clearRect(0, 0, screenshotCanvas.width, screenshotCanvas.height);
+
+        // Draw the image with the adjusted dimensions
+        screenshotContext.drawImage(canvas, 0, screenshotVerticalPosition, canvas.width, canvas.height, 0, 0, screenshotCanvas.width, screenshotCanvas.height);
+
+        setTimeout(captureScreen, 800); // Update every 800 milliseconds (0.8 seconds)
+      });
+    }
+              captureScreen();
+            </script>
+
+
+          </div>
+        </div>
+      </div>
       
       <!-- Add more project divs with the same structure -->
       <button class = "show-more-button" id="show-projects-button" onclick="toggleProjectsVisibility()">Show More</button>
