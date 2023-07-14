@@ -20,7 +20,9 @@ const bindEvents = () => {
 
       //gradual one by one anim bounce on media
       projectMedia.forEach((item, index) => {
+        item.style.animationPlayState = 'running'; // Enable the animation for the first three projects
         item.style.setProperty('--delay-index', (index));
+
       });
 
       

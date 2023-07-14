@@ -63,13 +63,14 @@
   transition: max-height 0.5s ease; /* Add transition for smooth resizing */
   overflow: hidden; /* Hide the content when collapsed */
   max-height: fit-content; /* Set max-height to fit content */
+  animation:expandProjDiv  0.4s ease; /* Apply the animation */
 
-}
+} 
 
 .collapsed .project {
-  transition: max-height 0.5s ease; /* Add transition for smooth resizing */
-  max-height: fit-content; /* Set max-height to fit content */
-
+  transition: min-height 0.5s ease; /* Add transition for smooth resizing */
+  min-height: fit-content; /* Set max-height to fit content */
+  
 }
 
 .project-media {
@@ -320,14 +321,6 @@ a {
   text-decoration: none;
 }
 
-skilltype {
-  flex: 0 0 10%; /* Set a fixed width of 10% */
-  color: #165b8e;
-  text-align: right;
-  border-bottom: 1px solid #065786; /* Add a faint gray-blue line at the bottom */
-
-}
-
 
 
 a:hover {
@@ -381,4 +374,23 @@ section {
 
 h2 {
   margin-top: 0;
+}
+
+.about-me-container {
+  display: flex;
+
+}
+
+.about-me-txt {
+  flex: 1;
+}
+
+.personal-picture {
+  width: 50%;
+  margin-right: 30px;
+}
+
+.personal-picture img {
+  width: 100%;
+  height: auto;
 }

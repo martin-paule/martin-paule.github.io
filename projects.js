@@ -29,11 +29,11 @@ const projectsData = [
       downloadLink: 'https://github.com/martin-paule/PixelMazed',
       media: {
         images: [
-          'images/SSSS/Main_Menu.png',
-          'images/SSSS/in_game.png',
-          'images/SSSS/Upgrade_Screen.png'
+          'images/PixelMazed/Pic1.png',
+          'images/PixelMazed/Pic2.png',
+          'images/PixelMazed/Pic3.png'
         ],
-        video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
+        video: 'videos/PixelMazedGamePlay.mp4'
       }
     },
     {
@@ -46,11 +46,11 @@ const projectsData = [
       downloadLink: 'https://github.com/martinpaule/Genetic_Learning',
       media: {
         images: [
-          'images/SSSS/Main_Menu.png',
-          'images/SSSS/in_game.png',
-          'images/SSSS/Upgrade_Screen.png'
+          'images/GenLearning/Pic1.png',
+          'images/GenLearning/Pic2.png',
+          'images/GenLearning/Pic3.png'  
         ],
-        video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
+        video: 'videos/GeneticLearning_Re-upload.mp4'
       }
     },
     {
@@ -184,6 +184,7 @@ const projectsData = [
       source.src = projectData.media.video;
       source.type = 'video/mp4';
       video.appendChild(source);
+      video.style.animationPlayState = 'paused'; // Pause the animation for the first three projects
       projectMedia.appendChild(video);
     }
 
@@ -191,6 +192,7 @@ const projectsData = [
       projectData.media.images.forEach((imagePath) => {
         const img = document.createElement('img');
         img.src = imagePath;
+        img.style.animationPlayState = 'paused'; // Pause the animation for the first three projects
         img.alt = 'Project Image';
         projectMedia.appendChild(img);
       });
@@ -199,14 +201,50 @@ const projectsData = [
     projectsContainer.appendChild(projectClone);
   });
   
-  const projects = projectsContainer.querySelectorAll('.project');
-
   
-
+  
+  //at the start, only show first 3  projects
+  const projects = projectsContainer.querySelectorAll('.project');
   projects.forEach((project, index) => {
     if (index >= 3) {
       project.classList.add('hidden');
+    }else{
+      project.style.animation = 'expandProjDiv 0.4s ease';
+      project.style.animationPlayState = 'paused'; // Pause the animation for the first three projects
+      project.style.animationDelay = '-0.4s'; // Set a negative delay to start the animation at 100% progress
     }
+
+
+    //TODO cancel falling anim of first 3 projects
   });
 
+  //makes the navigation at the header be a smooth resize - move from projects folder
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+
+  //will show this repo's commits
+  /* 
+  fetch('https://api.github.com/repos/martinpaule/martinpaule.github.io/commits')
+  .then(response => response.json())
+  .then(data => {
+    const commitList = document.getElementById('commit-list');
+    data.forEach(commit => {
+      const commitTitle = commit.commit.message;
+      const listItem = document.createElement('li');
+      listItem.textContent = commitTitle;
+      commitList.appendChild(listItem);
+    });
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
+  */
 };

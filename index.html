@@ -17,7 +17,7 @@
 
     <div class="container">
 
-      <h1>Martin Paule ( ! WEBSITE UNDER CONSTRUCTION ! )</h1> 
+      <h1>Martin Paule - Portfolio( ! WEBSITE UNDER CONSTRUCTION ! )</h1> 
       <img src="gifs/PurpBuilder.gif" alt="Example GIF">
     </div>
 
@@ -33,57 +33,32 @@
 
   <main>
     <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I am Martin, a recent first-class degree graduate of the Computer Game Application Development course on Abertay University.</p>
-      <p>I have experience in various areas of game dev, such as AI, AR, Networking, Graphics Programming, Tools Programming, etc.</p>
-      <p>Below You can find more information about me, my skillset, interests, as well as my past projects.</p>
-
-      <h3>Areas of Interest</h3> 
-      <p>Augmented Reality, Artifitial Intelligence, Mobile Games</p>
+      <div class="about-me-container">
+        <div class="personal-picture">
+          <img src="images/personalPicture.jpg" alt="Personal Picture">
+        </div>
+        
+        <div class="about-me-txt">
+          <h2>About Me</h2>
+          <p>Hello!<br> I am Martin, a recent graduate (<strong>first-class degree, achieved GPA 4.0</strong>) of the <strong>BSc (Hons) Computer Game Application Development.</strong> course on Abertay University</p>
+          <p>During my studies I have thoroughly enjoyed improving my skills in various areas of game development, such as AR, AI, Graphics Programming, Networking, etc.
+          <br>Now, I am excited to start the next step of my journey within a professional corporate environment.</p>
+          <p>Below You can find more information about my skillset, interests,  as well as an overview of some of my past projects.</p>
+    
+          <h3>Areas of Interest</h3> 
+          <p>Augmented Reality, Artificial Intelligence, Mobile Games</p>
+          <h3>Skills</h3> 
+          <h4>Programming Languages</h4>
+          <p>C++, C#, Python, HTML, CSS, SQL, JavaScript</p>
+          <h4>Game Engines</h4>
+          <p>Unreal Engine, Unity</p>
+          <h4>Additional</h4>
+          <p>Wwise, DirectX, OpenGL, TensorFlow </p>
+        </div>
       
-      <h3>Skills</h3> 
-      <h4>Programming Languages</h4>
-      <ul>
-        <li>
-          <div class="skill">
-            <skilltype>C++</skilltype>
-            <div class="fill" style="width: 75%; background-color: #1ce007;"></div>
-            <span>(Good)</span>
-          </div>
-        </li>
-        <li>
-            <div class="skill">
-              <skilltype>C#, Python</skilltype>
-              <div class="fill" style="width: 50%; background-color: #ff9b06;"></div>
-              <span>(Intermediate)</span>
-            </div>
-        </li>
-        <li>
-            <div class="skill">
-              <skilltype>HTML, CSS, SQL, JavaScript</skilltype>
-              <div class="fill" style="width: 25%; background-color: #ff1639;"></div>
-              <span>(Limited Experience)</span>
-            </div>
-        </li>
-      </ul>
-      <h4>Game Engines</h4>
-      <ul><!-- List of Engines -->
-        <li>
-          <div class="skill">
-            <skilltype>Unreal Engine</skilltype>
-            <div class="fill" style="width: 75%; background-color: #1ce007;"></div>
-            <span>(Good)</span>
-          </div>
-        </li>
-        <li>
-            <div class="skill">
-              <skilltype>Unity</skilltype>
-              <div class="fill" style="width: 50%; background-color: #ff9b06;"></div>
-              <span>(Intermediate)</span>
-            </div>
-        </li>
+      
+    </div>
 
-      </ul>
     </section>
 
     <section id="projects">
@@ -117,15 +92,18 @@
       
       <!-- Add more project divs with the same structure -->
       <button class = "show-more-button" id="show-projects-button" onclick="toggleProjectsVisibility()">Show More</button>
+
     </section>
-    
+    <!--<ul id="commit-list"></ul>UNCOMMENT THIS TO ADD THE REPO LIST-->
+
 
     <section id="contact">
       <h2>Contact Me</h2>
-      <p>You can reach me at:</p>
       <ul>
         <li>Email: <a href="mailto:martinpaule17@gmail.com">martinpaule17@gmail.com</a></li> 
         <li>Phone: <a href="tel:+447925955261">+44 7925 955 261</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/martin-paule-32ab07260/">Martin Paule</a></li>
+
       </ul>
     </section>
   </main>
