@@ -4,6 +4,7 @@
 const projectsData = [
     {
       title: 'Super-Serious-Space-Shooter (2019)',
+      highlightDesc: 'Fun little endless space shooter game with original art assets',
       mainFocus: 'Creating a simple game slice.',
       developmentEnvironment: 'C++, SFML library',
       description: 'SSSS is a game made in 1st year at Abertay University. It is entirely made in C++, without the use of any engines.',
@@ -21,6 +22,7 @@ const projectsData = [
     },
     {
       title: 'PixelMazed (2021)',
+      highlightDesc: 'Procedurally generated dungeon with a dynamically updated minimap',
       mainFocus: 'Implement 3D collisions by utilizing 2D boxes.',
       developmentEnvironment: 'C++, OpenGL (SDL)',
       description: 'PixelMazed is an original game. It is done entirely in c++ and there various notable features within this project, such as a dynamically updated fog-of-war minimap, as well as random dungeon generation.',
@@ -38,6 +40,7 @@ const projectsData = [
     },
     {
       title: 'Genetic Learning (2022)',
+      highlightDesc: 'Genetic Learning - Simulating a thrive environment of simple AI Hunter/Gatherers',
       mainFocus: 'Artifitial Intelligence',
       developmentEnvironment: 'C#, Unity',
       description: 'In this Unity project, there are several simulations of a simple "thrive" environment. The goal is for the program to find an optimal combination of humans and their distribution of perk points into various stats.',
@@ -55,6 +58,7 @@ const projectsData = [
     },
     {
       title: 'AR Adventures (2022)',
+      highlightDesc: 'Demo of a AR survival game on Android',
       mainFocus: 'Augmented Reality',
       developmentEnvironment: 'Unreal Engine, C++',
       description: 'Project made during the final year at Abertay University. Because this application was developed using the Google Pixel 4 and deployability for other platforms has not yet been explored, there is no official phone executable. However, the source code is publically available, which can be then built into an executable manually.',
@@ -63,15 +67,16 @@ const projectsData = [
       downloadLink: 'https://github.com/TheBigPaws/AR_Application',
       media: {
         images: [
-          'images/SSSS/Main_Menu.png',
-          'images/SSSS/in_game.png',
-          'images/SSSS/Upgrade_Screen.png'
+          'images/ImgMissing.png',
+          'images/ImgMissing.png',
+          'images/ImgMissing.png',
         ],
         video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
       }
     },
     {
       title: 'Dissertation Artefact (2023)',
+      highlightDesc: 'Computationally efficient N-Body Gravitational simulations in a videogame setting',
       mainFocus: 'N-body gravitational simulation using Barnes-Hut',
       developmentEnvironment: 'Unreal Engine, C++',
       description: 'Dissertation Artefact for the Computer Game Application Development course on Abertay University. This project explores the implementation of the Barnes-Hut algorithm to tackle the N-Body Problem. This framework is then applied into- and evaluated in the context of videogames',
@@ -80,15 +85,16 @@ const projectsData = [
       downloadLink: 'https://github.com/martinpaule/DissertationProject',
       media: {
         images: [
-          'images/SSSS/Main_Menu.png',
-          'images/SSSS/in_game.png',
-          'images/SSSS/Upgrade_Screen.png'
+          'images/ImgMissing.png',
+          'images/ImgMissing.png',
+          'images/ImgMissing.png',
         ],
         video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
       }
     },
     {
       title: 'Tools Programming (2023)',
+      highlightDesc: 'Creating Game-Development Tools using MFC and C++.',
       mainFocus: 'Tools development',
       developmentEnvironment: 'C++, MFC, SQL',
       description: 'This project has been developed for the Tools Programming (CMP405) module in Abertay university. It adds various functionality to an initially empty, basic project.',
@@ -97,15 +103,16 @@ const projectsData = [
       downloadLink: 'https://github.com/martinpaule/ToolsProgramming',
       media: {
         images: [
-          'images/SSSS/Main_Menu.png',
-          'images/SSSS/in_game.png',
-          'images/SSSS/Upgrade_Screen.png'
+          'images/ImgMissing.png',
+          'images/ImgMissing.png',
+          'images/ImgMissing.png',
         ],
         video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
       }
     },
     {
       title: 'Networking Tanks (2021)',
+      highlightDesc: 'Simple networked tank game built on a custom peer-to-peer network',
       mainFocus: 'Developing a netowrked application',
       developmentEnvironment: 'C++, SFML library',
       description: 'Final project for a Networking module at 3rd year CGAD at Abertay. The network connects using TCP sockets on a peer-to-peer server structure',
@@ -114,16 +121,17 @@ const projectsData = [
       downloadLink: 'https://github.com/martinpaule/Networking_Project',
       media: {
         images: [
-          'images/SSSS/Main_Menu.png',
-          'images/SSSS/in_game.png',
-          'images/SSSS/Upgrade_Screen.png'
+          'images/ImgMissing.png',
+          'images/ImgMissing.png',
+          'images/ImgMissing.png',
         ],
         video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
       }
     },
     {
       title: 'Parallelized Image Editor (2021)',
-      mainFocus: 'Investigate CPU and GPU parallelization',
+      highlightDesc: 'Image Editing application enhanced by CPU and GPU parallelization ',
+      mainFocus: 'Investigate parallel computing on the CPU and GPU',
       developmentEnvironment: 'C++',
       description: 'This application was made as a final project for 2nd year Parallel Computing course at Abertay University. It is an image editing library, that takes advantage of both GPU and CPU parallelization',
       notableFeatures: 'parallelization, multithreading, image editing',
@@ -131,9 +139,9 @@ const projectsData = [
       downloadLink: 'https://github.com/martinpaule/Parallel-Image-Edit',
       media: {
         images: [
-          'images/SSSS/Main_Menu.png',
-          'images/SSSS/in_game.png',
-          'images/SSSS/Upgrade_Screen.png'
+          'images/ImgMissing.png',
+          'images/ImgMissing.png',
+          'images/ImgMissing.png',
         ],
         video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
       }
@@ -159,8 +167,9 @@ const projectsData = [
     /*set all project's text data*/
     projectsData.forEach((projectData) => {
     const projectClone = projectTemplate.content.cloneNode(true);
-
+    
     setProjectData(projectClone.querySelector('.project-title'), projectData.title);
+    setProjectData(projectClone.querySelector('.highlight-description'), projectData.highlightDesc);
     setProjectData(projectClone.querySelector('.main-focus'), projectData.mainFocus);
     setProjectData(projectClone.querySelector('.development-environment'), projectData.developmentEnvironment);
     setProjectData(projectClone.querySelector('.description'), projectData.description);

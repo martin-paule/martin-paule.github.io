@@ -7,6 +7,10 @@ const bindEvents = () => {
       const details = projectDiv.querySelector('.project-details');
       const projectMedia = projectDiv.querySelectorAll('.project-media img, .project-media video');
       
+      // Get the element with the class "highlight-description"
+      const ee = document.querySelector('.highlight-description');
+      ee.style.display = (ee.style.display === 'none') ? 'block' : 'none';
+
 
       //toggle collapsed
       collapseButton.classList.toggle('collapsed');
