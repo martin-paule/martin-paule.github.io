@@ -58,7 +58,7 @@ const projectsData = [
     },
     {
       title: 'AR Adventures (2022)',
-      highlightDesc: 'Demo of a AR survival game on Android',
+      highlightDesc: 'Exploring AR development with UE5 - Game Demo',
       mainFocus: 'Augmented Reality',
       developmentEnvironment: 'Unreal Engine, C++',
       description: 'Project made during the final year at Abertay University. Because this application was developed using the Google Pixel 4 and deployability for other platforms has not yet been explored, there is no official phone executable. However, the source code is publically available, which can be then built into an executable manually.',
@@ -67,11 +67,11 @@ const projectsData = [
       downloadLink: 'https://github.com/TheBigPaws/AR_Application',
       media: {
         images: [
-          'images/ImgMissing.png',
-          'images/ImgMissing.png',
-          'images/ImgMissing.png',
+          'images/ARadventures/AR1.png',
+          'images/ARadventures/AR2.png',
+          'images/ARadventures/AR3.png',
         ],
-        video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
+        video: 'videos/ARadventures.mp4'
       }
     },
     {
@@ -94,7 +94,7 @@ const projectsData = [
     },
     {
       title: 'Tools Programming (2023)',
-      highlightDesc: 'Creating Game-Development Tools using MFC and C++.',
+      highlightDesc: 'Creating Game Dev Tools using MFC and C++.',
       mainFocus: 'Tools development',
       developmentEnvironment: 'C++, MFC, SQL',
       description: 'This project has been developed for the Tools Programming (CMP405) module in Abertay university. It adds various functionality to an initially empty, basic project.',
@@ -103,16 +103,16 @@ const projectsData = [
       downloadLink: 'https://github.com/martinpaule/ToolsProgramming',
       media: {
         images: [
-          'images/ImgMissing.png',
-          'images/ImgMissing.png',
-          'images/ImgMissing.png',
+          'images/Tools/tools1.png',
+          'images/Tools/tools2.png',
+          'images/Tools/tools3.png',
         ],
-        video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
+        video: 'videos/ToolsProgramming.mp4'
       }
     },
     {
       title: 'Networking Tanks (2021)',
-      highlightDesc: 'Simple networked tank game built on a custom peer-to-peer network',
+      highlightDesc: 'Simple tank game run on a custom peer-to-peer network',
       mainFocus: 'Developing a netowrked application',
       developmentEnvironment: 'C++, SFML library',
       description: 'Final project for a Networking module at 3rd year CGAD at Abertay. The network connects using TCP sockets on a peer-to-peer server structure',
@@ -139,11 +139,11 @@ const projectsData = [
       downloadLink: 'https://github.com/martinpaule/Parallel-Image-Edit',
       media: {
         images: [
-          'images/ImgMissing.png',
-          'images/ImgMissing.png',
-          'images/ImgMissing.png',
+          'images/ImgEdit/Edit1.png',
+          'images/ImgEdit/Edit2.png',
+          'images/ImgEdit/Edit3.png',
         ],
-        video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
+        video: 'videos/ImgEditor.mp4'
       }
     },
   ];
