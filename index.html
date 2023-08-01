@@ -1,116 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Martin Paule - Portfolio Website</title>
-  <link rel="stylesheet" href="styles.css"> 
-  <script src="script.js"></script> 
-  <script src="projects.js"></script>
-  <script src="events.js"></script> 
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Paule - Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="script.js"></script> 
+    <script src="projects.js"></script>
+    <script src="events.js"></script> 
 
 
-</head>
-<body>
+  </head>
+  <body>
 
-  <header>
+    <header>
 
-    <div class="container">
+      <div class="container">
 
-      <h1>Martin Paule - Portfolio( ! WEBSITE UNDER CONSTRUCTION ! )</h1> 
-      <img src="gifs/PurpBuilder.gif" alt="Example GIF">
-    </div>
+        <h1>Martin Paule - Portfolio( ! WEBSITE UNDER CONSTRUCTION ! )</h1> 
+        <img src="gifs/PurpBuilder.gif" alt="Example GIF">
+      </div>
 
 
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section id="about">
-      <div class="about-me-container">
-        <div class="personal-picture">
-          <img src="images/personalPicture.jpg" alt="Personal Picture">
-        </div>
+    <main>
+      <section id="about">
+        <div class="about-me-container">
+          <div class="personal-picture">
+            <img src="images/personalPicture.jpg" alt="Personal Picture">
+          </div>
+          
+          <div class="about-me-txt">
+            <h2>About Me</h2>
+            <p>Hello!<br> I am Martin, a recent graduate (<strong>first-class degree, achieved GPA 4.0</strong>) of the <strong>BSc (Hons) Computer Game Application Development</strong> course on Abertay University.</p>
+            <p>During my studies I have thoroughly enjoyed improving my skills in various areas of game development, such as AR, AI, Graphics Programming, Networking, etc.
+            <br>Now, I am excited to start the next step of my journey within a professional corporate environment.</p>
+            <p>Below You can find more information about my skillset, interests,  as well as an overview of some of my past projects.</p>
+      
+            <h2>Areas of Interest</h2> 
+            <p>Augmented Reality, Artificial Intelligence, Generative Content</p>
+            <h2>Skills</h2> 
+            <h4>Programming Languages</h4>
+            <p>C++, C#, Python, HTML, CSS, SQL, JavaScript</p>
+            <h4>Game Engines</h4>
+            <p>Unreal Engine, Unity</p>
+            <h4>Additional</h4>
+            <p>Wwise, DirectX, OpenGL, TensorFlow </p>
+          </div>
         
-        <div class="about-me-txt">
-          <h2>About Me</h2>
-          <p>Hello!<br> I am Martin, a recent graduate (<strong>first-class degree, achieved GPA 4.0</strong>) of the <strong>BSc (Hons) Computer Game Application Development</strong> course on Abertay University.</p>
-          <p>During my studies I have thoroughly enjoyed improving my skills in various areas of game development, such as AR, AI, Graphics Programming, Networking, etc.
-          <br>Now, I am excited to start the next step of my journey within a professional corporate environment.</p>
-          <p>Below You can find more information about my skillset, interests,  as well as an overview of some of my past projects.</p>
-    
-          <h3>Areas of Interest</h3> 
-          <p>Augmented Reality, Artificial Intelligence, Mobile Games</p>
-          <h3>Skills</h3> 
-          <h4>Programming Languages</h4>
-          <p>C++, C#, Python, HTML, CSS, SQL, JavaScript</p>
-          <h4>Game Engines</h4>
-          <p>Unreal Engine, Unity</p>
-          <h4>Additional</h4>
-          <p>Wwise, DirectX, OpenGL, TensorFlow </p>
-        </div>
-      
-      
-    </div>
+        
+      </div>
 
-    </section>
+      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div id="projects-container"></div>
+      <section id="projects">
+        <div class="tt-header-container">
 
-      <template id="project-template">
-        <div class="project collapsed">
-          <div class="project-header">
-            <h3 class="project-title"></h3>
-            <p class="highlight-description" style="font-style: italic;"></p>
-            <button class="collapse-button collapsed">^</button>
+        <h2>Projects</h2>
+        <div class="tooltip-container">
+          <div class="info-icon" id="info-icon">
+            <span>?</span>
           </div>
-          <div class="project-details collapsed">
-            <div class="project-text">
-              <h4>Original Focus:</h4>
-              <p class="main-focus"></p>
-              <h4>Development Environment:</h4>
-              <p class="development-environment"></p>
-              <h4>Description:</h4>
-              <p class="description"></p>
-              <h4>Notable Features:</h4>
-              <p class="notable-features"></p>
-              <h4 class = "download-vers"></h4>
-              <a href="" target="_blank" class="download-button">Download</a>
+          <div class="tooltip" id="tooltip">
+            <p>I do not own/monetize any background music from the following demonstration videos.</p>
+            <p>The sole purpose of these videos is to showcase my past projects (where all code has been done by me) in a simple & easily accesible manner.</p>
+          </div>
+        </div>
+      </div>
+
+        <div id="projects-container"></div>
+
+        <template id="project-template">
+          <div class="project collapsed">
+            <div class="project-header">
+              <h3 class="project-title"></h3>
+              <p class="highlight-description" style="font-style: italic;"></p>
+              <button class="collapse-button collapsed">^</button>
             </div>
-            <div class="project-media"></div>
+            <div class="project-details collapsed">
+              <div class="project-text">
+                <h4>Original Focus:</h4>
+                <p class="main-focus"></p>
+                <h4>Development Environment:</h4>
+                <p class="development-environment"></p>
+                <h4>Description:</h4>
+                <p class="description"></p>
+                <h4>Notable Features:</h4>
+                <p class="notable-features"></p>
+                <h4 class = "download-vers"></h4>
+                <a href="" target="_blank" class="download-button">Download</a>
+              </div>
+              <div class="project-media"></div>
+            </div>
           </div>
+        </template>
+        
+        
+
+      </section>
+      <!--<ul id="commit-list"></ul>UNCOMMENT THIS TO ADD THE REPO LIST-->
+        <!-- Add more project divs with the same structure -->
+        <div class="sm-button-container">
+          <button class="show-more-button" id="show-projects-button" onclick="toggleProjectsVisibility()">Show More</button>
         </div>
-      </template>
       
-      
-      <!-- Add more project divs with the same structure -->
-      <button class = "show-more-button" id="show-projects-button" onclick="toggleProjectsVisibility()">Show More</button>
 
-    </section>
-    <!--<ul id="commit-list"></ul>UNCOMMENT THIS TO ADD THE REPO LIST-->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+          <li>Email: <a href="mailto:martinpaule17@gmail.com">martinpaule17@gmail.com</a></li> 
+          <li>Phone: <a href="tel:+447925955261">+44 7925 955 261</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/martin-paule-32ab07260/">Martin Paule</a></li>
 
+        </ul>
+      </section>
+    </main>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <ul>
-        <li>Email: <a href="mailto:martinpaule17@gmail.com">martinpaule17@gmail.com</a></li> 
-        <li>Phone: <a href="tel:+447925955261">+44 7925 955 261</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/martin-paule-32ab07260/">Martin Paule</a></li>
-
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Martin Paule</p> 
-  </footer>
-</body>
-</html>
+    <footer>
+      <p>&copy; 2023 Martin Paule</p> 
+    </footer>
+  </body>
+  </html>

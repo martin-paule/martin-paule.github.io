@@ -3,60 +3,6 @@
 
 const projectsData = [
     {
-      title: 'Super-Serious-Space-Shooter (2019)',
-      highlightDesc: 'Fun little endless space shooter game with original art assets',
-      mainFocus: 'Creating a simple game slice.',
-      developmentEnvironment: 'C++, SFML library',
-      description: 'SSSS is a game made in 1st year at Abertay University. It is entirely made in C++, without the use of any engines.',
-      notableFeatures: 'Original audio & sprites, endless wave & upgrade systems',
-      downloadVers: 'Github Download (Source Code & Executable):',
-      downloadLink: 'https://github.com/martin-paule/Super-Serious-Space-Shooter',
-      media: {
-        images: [
-          'images/SSSS/Main_Menu.png',
-          'images/SSSS/in_game.png',
-          'images/SSSS/Upgrade_Screen.png'
-        ],
-        video: 'videos/ssss.mp4'
-      }
-    },
-    {
-      title: 'PixelMazed (2021)',
-      highlightDesc: 'Procedurally generated dungeon with a dynamically updated minimap',
-      mainFocus: 'Implement 3D collisions by utilizing 2D boxes.',
-      developmentEnvironment: 'C++, OpenGL (SDL)',
-      description: 'PixelMazed is an original game. It is done entirely in c++ and there various notable features within this project, such as a dynamically updated fog-of-war minimap, as well as random dungeon generation.',
-      notableFeatures: 'Randomly generated dungeon, Minimap updating in real-time, Original audio & sprites',
-      downloadVers: 'Github Download (Source Code & Executable):',
-      downloadLink: 'https://github.com/martin-paule/PixelMazed',
-      media: {
-        images: [
-          'images/PixelMazed/Pic1.png',
-          'images/PixelMazed/Pic2.png',
-          'images/PixelMazed/Pic3.png'
-        ],
-        video: 'videos/PixelMazedGamePlay.mp4'
-      }
-    },
-    {
-      title: 'Genetic Learning (2022)',
-      highlightDesc: 'Genetic Learning - Simulating a thrive environment of simple AI Hunter/Gatherers',
-      mainFocus: 'Artifitial Intelligence',
-      developmentEnvironment: 'C#, Unity',
-      description: 'In this Unity project, there are several simulations of a simple "thrive" environment. The goal is for the program to find an optimal combination of humans and their distribution of perk points into various stats.',
-      notableFeatures: 'extensive UI, data recording',
-      downloadVers: 'Github Download (Source Code):',
-      downloadLink: 'https://github.com/martinpaule/Genetic_Learning',
-      media: {
-        images: [
-          'images/GenLearning/Pic1.png',
-          'images/GenLearning/Pic2.png',
-          'images/GenLearning/Pic3.png'  
-        ],
-        video: 'videos/GeneticLearning_Re-upload.mp4'
-      }
-    },
-    {
       title: 'AR Adventures (2022)',
       highlightDesc: 'Exploring AR development with UE5 - Game Demo',
       mainFocus: 'Augmented Reality',
@@ -85,11 +31,11 @@ const projectsData = [
       downloadLink: 'https://github.com/martinpaule/DissertationProject',
       media: {
         images: [
-          'images/ImgMissing.png',
-          'images/ImgMissing.png',
-          'images/ImgMissing.png',
+          'images/DissProj/Img1.png',
+          'images/DissProj/Img2.png',
+          'images/DissProj/Img3.png',
         ],
-        video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
+        video: 'videos/DissVid.mp4'
       }
     },
     {
@@ -111,8 +57,8 @@ const projectsData = [
       }
     },
     {
-      title: 'Networking Tanks (2021)',
-      highlightDesc: 'Simple tank game run on a custom peer-to-peer network',
+      title: 'Peer-To-Peer Tanks (2021)',
+      highlightDesc: 'Simple tank game run on a custom-built peer-to-peer network',
       mainFocus: 'Developing a netowrked application',
       developmentEnvironment: 'C++, SFML library',
       description: 'Final project for a Networking module at 3rd year CGAD at Abertay. The network connects using TCP sockets on a peer-to-peer server structure',
@@ -121,13 +67,69 @@ const projectsData = [
       downloadLink: 'https://github.com/martinpaule/Networking_Project',
       media: {
         images: [
-          'images/ImgMissing.png',
-          'images/ImgMissing.png',
-          'images/ImgMissing.png',
+          'images/netw/img1.png',
+          'images/netw/img2.png',
+          'images/netw/img3.png',
         ],
-        video: 'https://www.youtube.com/watch?v=BHOS4hi0oZc'
+        video: 'videos/NetW.mp4'
       }
     },
+    {
+      title: 'Super-Serious-Space-Shooter (2019)',
+      highlightDesc: 'Fun little endless space shooter game with original art assets',
+      mainFocus: 'Creating a simple game slice.',
+      developmentEnvironment: 'C++, SFML library',
+      description: 'SSSS is a game made in 1st year at Abertay University. It is entirely made in C++, without the use of any engines.',
+      notableFeatures: 'Original audio & sprites, endless wave & upgrade systems',
+      downloadVers: 'Github Download (Source Code & Executable):',
+      downloadLink: 'https://github.com/martin-paule/Super-Serious-Space-Shooter',
+      media: {
+        images: [
+          'images/SSSS/Main_Menu.png',
+          'images/SSSS/in_game.png',
+          'images/SSSS/Upgrade_Screen.png'
+        ],
+        video: 'videos/ssss.mp4'
+      }
+    },
+    {
+      title: 'Genetic Learning (2022)',
+      highlightDesc: 'Genetic Learning - Simulating a thrive environment of simple AI Hunter/Gatherers',
+      mainFocus: 'Artifitial Intelligence',
+      developmentEnvironment: 'C#, Unity',
+      description: 'In this Unity project, there are several simulations of a simple "thrive" environment. The goal is for the program to find an optimal combination of humans and their distribution of perk points into various stats.',
+      notableFeatures: 'extensive UI, data recording',
+      downloadVers: 'Github Download (Source Code):',
+      downloadLink: 'https://github.com/martinpaule/Genetic_Learning',
+      media: {
+        images: [
+          'images/GenLearning/Pic1.png',
+          'images/GenLearning/Pic2.png',
+          'images/GenLearning/Pic3.png'  
+        ],
+        video: 'videos/GeneticLearning_Re-upload.mp4'
+      }
+    },
+    {
+      title: 'PixelMazed (2021)',
+      highlightDesc: 'Procedurally generated dungeon with a dynamically updated minimap',
+      mainFocus: 'Implement 3D collisions by utilizing 2D boxes.',
+      developmentEnvironment: 'C++, OpenGL (SDL)',
+      description: 'PixelMazed is an original game. It is done entirely in c++ and there various notable features within this project, such as a dynamically updated fog-of-war minimap, as well as random dungeon generation.',
+      notableFeatures: 'Randomly generated dungeon, Minimap updating in real-time, Original audio & sprites',
+      downloadVers: 'Github Download (Source Code & Executable):',
+      downloadLink: 'https://github.com/martin-paule/PixelMazed',
+      media: {
+        images: [
+          'images/PixelMazed/Pic1.png',
+          'images/PixelMazed/Pic2.png',
+          'images/PixelMazed/Pic3.png'
+        ],
+        video: 'videos/PixelMazedGamePlay.mp4'
+      }
+    },
+
+    
     {
       title: 'Parallelized Image Editor (2021)',
       highlightDesc: 'Image Editing application enhanced by CPU and GPU parallelization ',
@@ -224,7 +226,6 @@ const projectsData = [
     }
 
 
-    //TODO cancel falling anim of first 3 projects
   });
 
   //makes the navigation at the header be a smooth resize - move from projects folder

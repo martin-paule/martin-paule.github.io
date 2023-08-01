@@ -7,11 +7,6 @@ const bindEvents = () => {
       const details = projectDiv.querySelector('.project-details');
       const projectMedia = projectDiv.querySelectorAll('.project-media img, .project-media video');
       
-      // Get the element with the class "highlight-description"
-      const ee = document.querySelector('.highlight-description');
-      ee.style.display = (ee.style.display === 'none') ? 'block' : 'none';
-
-
       //toggle collapsed
       collapseButton.classList.toggle('collapsed');
       projectDiv.classList.toggle('collapsed');
@@ -34,6 +29,9 @@ const bindEvents = () => {
     });
   });
 
+  
+
+
   //bind show more button
   const projects = document.querySelectorAll('.project');
     const showMoreButton = document.getElementById('show-projects-button');
@@ -51,6 +49,19 @@ const bindEvents = () => {
       });
     });
   
+
+
+    const infoIcon = document.getElementById('info-icon');
+const tooltip = document.getElementById('tooltip');
+
+infoIcon.addEventListener('mouseover', () => {
+  tooltip.style.display = 'block';
+});
+
+infoIcon.addEventListener('mouseout', () => {
+  tooltip.style.display = 'none';
+});
+
 };
 
   
