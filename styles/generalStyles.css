@@ -1,0 +1,110 @@
+/* --- GENERAL STYLES --- */
+
+
+
+body {
+  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f8fb; /* Light blue-gray background */
+  color: #333; /* Dark gray text color */
+}
+
+h1, h2, h3 {
+  color: #165b8e; /* Dark blue heading color */
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  color: #165b8e; /* Dark blue link color */
+  text-decoration: none;
+  font-size: 22px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff; /* White header background */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+  text-align: center; /* Centers block elements like the container and nav */
+
+}
+
+
+.container {
+  display: flex;
+  align-items: center; /* Vertically center the elements */
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 30px;
+  
+}
+
+/* Contact Section Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background-color: #165b8e; /* Dark blue footer background */
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main Section Styles */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.about-me-container {
+  display: flex;
+}
+
+.about-me-txt {
+  flex: 1;
+
+}
+
+.personal-picture {
+  width: 42%;
+  margin-right: 30px;
+  align-items: center;  /* Centers the image vertically within the container */
+  overflow: hidden; /* Ensures that the image doesn't overflow its container */
+}
+
+.personal-picture img {
+  height: auto;  /* Makes the image take the full height of its container */
+  width:100%;
+}
+

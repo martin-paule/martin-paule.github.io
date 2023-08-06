@@ -257,4 +257,34 @@ const projectsData = [
     console.log('Error:', error);
   });
   */
+
+  let images = document.querySelectorAll('.project-media img');
+let modal = document.getElementById('mediaModal');
+let modalImg = document.getElementById('modalImage');
+let closeBtn = document.querySelector('.close-btn');
+
+// Function to open the modal with an image or video
+function openModal(src, type) {
+  if (type === 'image') {
+    modalImg.src = src;
+    modalImg.style.display = 'block';
+  } 
+  modal.style.display = 'block';
+}
+
+// Attach event listeners to images and videos
+images.forEach(img => {
+  img.addEventListener('click', function() {
+    openModal(this.src, 'image');
+  });
+});
+
+
+// Close the modal
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+  modalImg.src = '';
+});
+
+
 };
