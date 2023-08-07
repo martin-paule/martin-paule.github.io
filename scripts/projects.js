@@ -4,13 +4,14 @@
 const projectsData = [
     {
       title: 'AR Adventures (2022)',
-      highlightDesc: 'Exploring AR development with UE5 - Game Demo',
+      highlightDesc: 'Exploring AR development with UE5',
       mainFocus: 'Augmented Reality',
       developmentEnvironment: 'Unreal Engine, C++',
-      description: 'Project made during the final year at Abertay University. Because this application was developed using the Google Pixel 4 and deployability for other platforms has not yet been explored, there is no official phone executable. However, the source code is publically available, which can be then built into an executable manually.',
-      notableFeatures: 'Augmented Reality, Resource Managment, Visual Effects',
+      description: 'Project made during the final year at Abertay University. In this example game slice, the user has to walk around their physical environment and interact with various survival game elements, such as resources, building, upgrading their tool, using the Scan, etc.',
+      notableFeatures: 'Augmented Reality, Resource Managment, Plane Tracking, Virtual VFX in Real World',
       downloadVers: 'Github Download (Source Code):',
       downloadLink: 'https://github.com/TheBigPaws/AR_Application',
+      musicName: '(Video Demo Music: Animal Collective - My Girls)',
       media: {
         images: [
           'images/ARadventures/AR1.png',
@@ -25,10 +26,11 @@ const projectsData = [
       highlightDesc: 'Computationally efficient N-Body Gravitational simulations in a videogame setting',
       mainFocus: 'N-body gravitational simulation using Barnes-Hut',
       developmentEnvironment: 'Unreal Engine, C++',
-      description: 'Dissertation Artefact for the Computer Game Application Development course on Abertay University. This project explores the implementation of the Barnes-Hut algorithm to tackle the N-Body Problem. This framework is then applied into- and evaluated in the context of videogames',
+      description: 'Dissertation Artefact for the Computer Game Application Development course on Abertay University. This project explores the implementation of the Barnes-Hut algorithm to tackle the N-Body Problem. This framework is then applied into- and evaluated in the context of a simulation, as well as videogames',
       notableFeatures: 'Barnes-Hut algoruthm, extensive UI, sandbox and videogame example',
-      downloadVers: 'Github Download (Source Code):',
+      downloadVers: 'Github Download (Source Code & Executable):',
       downloadLink: 'https://github.com/martinpaule/DissertationProject',
+      musicName: '(Video Demo Music: Hidria Spacefolk - Amos Ame)',
       media: {
         images: [
           'images/DissProj/Img1.png',
@@ -43,10 +45,11 @@ const projectsData = [
       highlightDesc: 'Creating Game Dev Tools using MFC and C++.',
       mainFocus: 'Tools development',
       developmentEnvironment: 'C++, MFC, SQL',
-      description: 'This project has been developed for the Tools Programming (CMP405) module in Abertay university. It adds various functionality to an initially empty, basic project.',
-      notableFeatures: 'Terrain Editing & Painting, Object Manipulation, Windows MFC',
+      description: 'This project has been developed for the Tools Programming module in Abertay university. It adds various functionality to an initially empty, basic project.',
+      notableFeatures: 'Terrain Editing & Painting, Object Manipulation, Windows MFC, SQL',
       downloadVers: 'Github Download (Source Code):',
       downloadLink: 'https://github.com/martinpaule/ToolsProgramming',
+      musicName: '(Video Demo Music: World of Warcraft login screen)',
       media: {
         images: [
           'images/Tools/tools1.png',
@@ -61,10 +64,11 @@ const projectsData = [
       highlightDesc: 'Simple tank game run on a custom-built peer-to-peer network',
       mainFocus: 'Developing a netowrked application',
       developmentEnvironment: 'C++, SFML library',
-      description: 'Final project for a Networking module at 3rd year CGAD at Abertay. The network connects using TCP sockets on a peer-to-peer server structure',
-      notableFeatures: 'peer-to-peer, interpolation, predition',
+      description: 'Final project for a Networking module at 3rd year CGAD at Abertay. The network connects (and communicates) using TCP sockets on a self-built peer-to-peer server structure',
+      notableFeatures: 'peer-to-peer, interpolation, prediction',
       downloadVers: 'Github Download (Source Code):',
       downloadLink: 'https://github.com/martinpaule/Networking_Project',
+      musicName: '(Video Demo Music: Pink Floyd - Money)',
       media: {
         images: [
           'images/netw/img1.png',
@@ -83,6 +87,7 @@ const projectsData = [
       notableFeatures: 'Original audio & sprites, endless wave & upgrade systems',
       downloadVers: 'Github Download (Source Code & Executable):',
       downloadLink: 'https://github.com/martin-paule/Super-Serious-Space-Shooter',
+      musicName: '(Video Demo Music: Original)',
       media: {
         images: [
           'images/SSSS/Main_Menu.png',
@@ -97,10 +102,11 @@ const projectsData = [
       highlightDesc: 'Genetic Learning - Simulating a thrive environment of simple AI Hunter/Gatherers',
       mainFocus: 'Artifitial Intelligence',
       developmentEnvironment: 'C#, Unity',
-      description: 'In this Unity project, there are several simulations of a simple "thrive" environment. The goal is for the program to find an optimal combination of humans and their distribution of perk points into various stats.',
-      notableFeatures: 'extensive UI, data recording',
+      description: 'In this Unity project, there are several parallel simulations of a simple "thrive" environment. The goal is for the program to find an optimal combination of humans and their distribution of perk points into various stats and behaviours.',
+      notableFeatures: 'extensive UI, data recording, thrive environment',
       downloadVers: 'Github Download (Source Code):',
       downloadLink: 'https://github.com/martinpaule/Genetic_Learning',
+      musicName: ' ',
       media: {
         images: [
           'images/GenLearning/Pic1.png',
@@ -119,6 +125,7 @@ const projectsData = [
       notableFeatures: 'Randomly generated dungeon, Minimap updating in real-time, Original audio & sprites',
       downloadVers: 'Github Download (Source Code & Executable):',
       downloadLink: 'https://github.com/martin-paule/PixelMazed',
+      musicName: '(Video Demo Music: Original)',
       media: {
         images: [
           'images/PixelMazed/Pic1.png',
@@ -139,6 +146,7 @@ const projectsData = [
       notableFeatures: 'parallelization, multithreading, image editing',
       downloadVers: 'Github Download (Source Code):',
       downloadLink: 'https://github.com/martinpaule/Parallel-Image-Edit',
+      musicName: '(Video Demo Music: Daikaiju - Farewell to Monster Island)',
       media: {
         images: [
           'images/ImgEdit/Edit1.png',
@@ -177,6 +185,8 @@ const projectsData = [
     setProjectData(projectClone.querySelector('.description'), projectData.description);
     setProjectData(projectClone.querySelector('.notable-features'), projectData.notableFeatures);
     setProjectData(projectClone.querySelector('.download-vers'), projectData.downloadVers);
+    setProjectData(projectClone.querySelector('.music-name'), projectData.musicName);
+
 
     
     /*set all project's download*/

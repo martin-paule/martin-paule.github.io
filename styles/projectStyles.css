@@ -7,12 +7,12 @@
   }
 
   .project {
-    background-color: #ffffff;
+    background-color: #a8a8a8;
     padding: 15px;
     margin-bottom: 15px;
   
     border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 20px rgba(80,255,80, 2); /* Light shadow effect */
     overflow: hidden;
     
     transition: max-height 0.5s ease; /* Add transition for smooth resizing */
@@ -89,7 +89,7 @@
     animation: expandProjDiv 0.4s ease; /* Apply the animation */
   
   }
-  
+
   .collapsed .project-text {
     display: none;
 
@@ -175,6 +175,8 @@
 
 .tooltip p {
   margin: 5px 0;
+  color: #000000; /* White question mark color */
+
 }
 
 /* --- Show more projects button --- */

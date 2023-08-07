@@ -4,24 +4,39 @@
 
 body {
   
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f8fb; /* Light blue-gray background */
-  color: #333; /* Dark gray text color */
+  background-color: #3d3d3d; 
+
+  color: #333; 
 }
 
-h1, h2, h3 {
-  color: #165b8e; /* Dark blue heading color */
+
+h2, h3,h4 {
+  color: #aefcff;
+}
+
+h2 {
+  margin-top: 0;
 }
 
 h1 {
   margin: 0;
+  color: #aefcff;
+  font-size: 40px;
+
+}
+
+
+p {
+  color: #ffffff; 
+
 }
 
 a {
-  color: #165b8e; /* Dark blue link color */
-  text-decoration: none;
+  color: #aefcff;
+  text-decoration:solid;
   font-size: 22px;
 }
 
@@ -31,17 +46,18 @@ a:hover {
 
 /* Header Styles */
 header {
-  background-color: #ffffff; /* White header background */
+  background-color: #616161; 
+
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow effect */
-  text-align: center; /* Centers block elements like the container and nav */
+  box-shadow: 0 0 20px #aefcff;
+  text-align: center; 
 
 }
 
 
 .container {
   display: flex;
-  align-items: center; /* Vertically center the elements */
+  align-items: center; 
   justify-content: center;
   margin-bottom: 30px;
 
@@ -66,7 +82,7 @@ ul {
 }
 
 footer {
-  background-color: #165b8e; /* Dark blue footer background */
+  background-color: #000000; /* Dark blue footer background */
   color: #ffffff; /* White text color */
   padding: 20px;
   text-align: center;
@@ -83,9 +99,7 @@ section {
   margin-bottom: 40px;
 }
 
-h2 {
-  margin-top: 0;
-}
+
 
 .about-me-container {
   display: flex;
@@ -101,6 +115,9 @@ h2 {
   margin-right: 30px;
   align-items: center;  /* Centers the image vertically within the container */
   overflow: hidden; /* Ensures that the image doesn't overflow its container */
+  box-shadow: 0 0 20px #aefcff;
+  ; /* Light shadow effect */
+
 }
 
 .personal-picture img {
