@@ -12,12 +12,12 @@
     margin-bottom: 15px;
   
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(80,255,80, 2); /* Light shadow effect */
+    box-shadow: 0 0 20px rgba(80,255,80, 2); 
     overflow: hidden;
     
-    transition: max-height 0.5s ease; /* Add transition for smooth resizing */
-    max-height: fit-content; /* Set max-height to fit content */
-    animation: expandProjDiv 0.4s ease; /* Apply the animation */
+    transition: max-height 0.5s ease; 
+    max-height: fit-content; 
+    animation: expandProjDiv 0.4s ease; 
 
   } 
   
@@ -30,8 +30,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end; /* Align to the right */
-    margin-left: 20px; /* Adds spacing between the text and media */    
+    justify-content: flex-end; 
+    margin-left: 20px;     
   }
   
   .project-media:hover,
@@ -44,7 +44,7 @@
   .collapsed .project-media {
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start; /* Align to the right */
+    justify-content: flex-start; 
     display:flex;
     width:23%;
     
@@ -53,13 +53,13 @@
   
   .project-media img,
   .project-media video {
-    width: 100%; /* Adjust the width as desired */
-    margin-bottom: 10px; /* Adds spacing between the media elements */
-    margin-right: 10px; /* Adds spacing between the videos */
-    transition: opacity 0.8s ease; /* Add transition for smooth opacity change */
+    width: 100%; 
+    margin-bottom: 10px; 
+    margin-right: 10px; 
+    transition: opacity 0.8s ease; 
     border-radius: 10px;
   
-    animation: slideRight 0.5s ease; /* Apply the animation */
+    animation: slideRight 0.5s ease; 
     animation-delay: calc(var(--delay-index) * 0.1s);
   
   }
@@ -69,10 +69,10 @@
   
     border:none;
     border-radius: 10px;
-    transition: opacity 4s ease; /* Add transition for smooth opacity change */
-    transform: translateY(0%); /* Initial position */
+    transition: opacity 4s ease; 
+    transform: translateY(0%); 
   
-    animation: slideUp 0.5s ease; /* Apply the animation */
+    animation: slideUp 0.5s ease; 
     animation-delay: calc(var(--delay-index) * 0.1s);
   
   }
@@ -85,8 +85,8 @@
   }
   
   .project-text {
-    flex: 0 0 70%; /* Set a fixed width of 60% */
-    animation: expandProjDiv 0.4s ease; /* Apply the animation */
+    flex: 0 0 70%; 
+    animation: expandProjDiv 0.4s ease; 
   
   }
 
@@ -101,9 +101,9 @@
     font-size: 24px;  
     cursor: pointer;
     outline: none;
-    background-color: #165b8e; /* Change background color */
-    color: #ffffff; /* Change text color */
-    transition: transform 0.5s ease; /* Add transition for smooth transform */
+    background-color: #165b8e;
+    color: #ffffff; 
+    transition: transform 0.5s ease; 
     border-radius: 20px;
     padding-top: 8px;
     padding-right: 10px;
@@ -111,7 +111,7 @@
   }
   
   .collapse-button.collapsed {
-    transform: rotate(180deg); /* Rotate the button symbol */
+    transform: rotate(180deg);
   }
   
   .download-button {
@@ -123,15 +123,15 @@
   border-radius: 4px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
   
-  background-color: #7DD897; /* Lighter shade on hover */
-  border: 2px solid #3F7C54; /* Darker corporate green outline */
+  background-color: #7DD897; 
+  border: 2px solid #3F7C54; 
   
   }
   
   .download-button:hover {
   
-  background-color: #A4E8BA; /* Light corporate green fill */
-  border: 2px solid #4CA168; /* Darker corporate green outline */
+  background-color: #A4E8BA;
+  border: 2px solid #4CA168; 
   
   }
   
@@ -152,13 +152,13 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #3498db; /* Blue circle background color */
-  border: 2px solid #87CEEB; /* Light blue circle outline color */
+  background-color: #3498db; 
+  border: 2px solid #87CEEB; 
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  color: #fff; /* White question mark color */
+  color: #fff; 
   cursor: pointer;
 }
 
@@ -175,7 +175,7 @@
 
 .tooltip p {
   margin: 5px 0;
-  color: #000000; /* White question mark color */
+  color: #000000;
 
 }
 
@@ -237,3 +237,4 @@
   text-decoration: none;
   cursor: pointer;
 }
+

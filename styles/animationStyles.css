@@ -3,33 +3,51 @@
 /* Animation */
 @keyframes slideUp {
     0% {
-      transform: translateY(0%); /* Initial position */
+      transform: translateY(0%); 
     }
     50% {
-      transform: translateY(20%); /* Final position */
+      transform: translateY(20%); 
     }
     100% {
-      transform: translateY(0%); /* Final position */
+      transform: translateY(0%); 
     }
     }
 @keyframes slideRight {
     0% {
-      transform: translateX(0%); /* Initial position */
+      transform: translateX(0%); 
     }
     50% {
-      transform: translateX(-10%); /* Initial position */
+      transform: translateX(-10%); 
     }
     100% {
-      transform: translateX(0%); /* Final position */
+      transform: translateX(0%); 
     }
     }
 @keyframes expandProjDiv {
       0% {
-        transform: translateY(-100%) /* Initial position */
+        transform: translateY(-100%) 
       }
       100% {
-        transform: translateY(0%) /* Initial position */
+        transform: translateY(0%) 
       }
       }
 
-  
+  @keyframes eggRock {
+  0%, 100% {
+    transform: rotate(0deg);
+    
+  }
+  13% {
+    transform: rotate(-35deg);
+  }
+  28% {
+    transform: rotate(25deg);
+  }
+  38% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(-0deg);
+  }
+}
+

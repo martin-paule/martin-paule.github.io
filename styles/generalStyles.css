@@ -53,15 +53,20 @@ header {
   text-align: center; 
 
 }
-
-
 .container {
   display: flex;
-  align-items: center; 
-  justify-content: center;
-  margin-bottom: 30px;
-
+  align-items: center;
+  justify-content: flex-start; 
 }
+
+.centered-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -82,8 +87,8 @@ ul {
 }
 
 footer {
-  background-color: #000000; /* Dark blue footer background */
-  color: #ffffff; /* White text color */
+  background-color: #000000; 
+  color: #ffffff;
   padding: 20px;
   text-align: center;
 }
@@ -113,15 +118,68 @@ section {
 .personal-picture {
   width: 42%;
   margin-right: 30px;
-  align-items: center;  /* Centers the image vertically within the container */
-  overflow: hidden; /* Ensures that the image doesn't overflow its container */
+  align-items: center; 
+  overflow: hidden; 
   box-shadow: 0 0 20px #aefcff;
-  ; /* Light shadow effect */
 
 }
 
 .personal-picture img {
-  height: auto;  /* Makes the image take the full height of its container */
+  height: auto;  
   width:100%;
 }
 
+/* hammer code */
+
+hamButton {
+  border: none;
+  background-color: transparent;
+  cursor: inherit;
+  padding: 10px;
+  transition: background-color 0.3s;
+  height: 100px;
+}
+
+
+
+
+#btnImg:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  
+}
+
+#btnImg {
+  height: 60px;
+  background-color: #bcff03; 
+  border: 2px solid #000000; 
+  display: none;
+  
+}
+
+.hammer-cursor {
+  cursor: url('/images/Hammer.png'), auto;
+}
+
+
+.flying-letter {
+  position: absolute;
+  transition: transform 2s linear;
+  color:#ffffff
+}
+
+#easterEgg {
+  display: block;
+  margin: 0 auto; 
+  max-height: 100px;
+  animation: eggRock 1.6s infinite;
+  width: auto; 
+}
+#easterEgg:hover {
+  cursor: pointer;
+}
+
+.flying-egg-half {
+  position: absolute;
+  background-size: 200%; 
+  overflow: hidden;
+}
