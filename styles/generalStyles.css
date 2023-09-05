@@ -24,7 +24,7 @@ h2 {
 h1 {
   margin: 0;
   color: #aefcff;
-  font-size: 40px;
+  font-size: 50px;
 
 }
 
@@ -49,7 +49,6 @@ header {
   background-color: #616161; 
 
   padding: 20px;
-  box-shadow: 0 0 20px #aefcff;
   text-align: center; 
 
 }
@@ -79,6 +78,11 @@ nav ul li {
   
 }
 
+
+li {
+  color: #ffffff;
+}
+
 /* Contact Section Styles */
 ul {
   list-style-type: none;
@@ -87,7 +91,7 @@ ul {
 }
 
 footer {
-  background-color: #000000; 
+  background-color: #616161; 
   color: #ffffff;
   padding: 20px;
   text-align: center;
@@ -120,7 +124,6 @@ section {
   margin-right: 30px;
   align-items: center; 
   overflow: hidden; 
-  box-shadow: 0 0 20px #aefcff;
 
 }
 
@@ -170,7 +173,7 @@ hamButton {
 #easterEgg {
   display: block;
   margin: 0 auto; 
-  max-height: 100px;
+  max-height: 60px;
   animation: eggRock 1.6s infinite;
   width: auto; 
 }

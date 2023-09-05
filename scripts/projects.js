@@ -22,22 +22,22 @@ const projectsData = [
       }
     },
     {
-      title: 'Dissertation Artefact (2023)',
-      highlightDesc: 'Computationally efficient N-Body Gravitational simulations in a videogame setting',
-      mainFocus: 'N-body gravitational simulation using Barnes-Hut',
-      developmentEnvironment: 'Unreal Engine, C++',
-      description: 'Dissertation Artefact for the Computer Game Application Development course on Abertay University. This project explores the implementation of the Barnes-Hut algorithm to tackle the N-Body Problem. This framework is then applied into- and evaluated in the context of a simulation, as well as videogames',
-      notableFeatures: 'Barnes-Hut algoruthm, extensive UI, sandbox and videogame example',
-      downloadVers: 'Github Download (Source Code & Executable):',
-      downloadLink: 'https://github.com/martinpaule/DissertationProject',
-      musicName: '(Video Demo Music: Hidria Spacefolk - Amos Ame)',
+      title: 'Graphics Programming (2022)',
+      highlightDesc: 'Demo underwater scene showcasing various aspects of Graphics Programming',
+      mainFocus: 'Graphics Programming using DirectX11',
+      developmentEnvironment: 'DirectX11, C++',
+      description: 'This project utilizes various stages of the Graphics Pipeline, implementing features such as dynamic tesselation, vertex manipulation, post-processing effects, 2D billboarding, shadows and a terrain defined by a heightmap',
+      notableFeatures: 'Tesselation, vertex manipulation, post-processing effects',
+      downloadVers: 'Github Download (Source Code):',
+      downloadLink: 'https://github.com/martinpaule/GraphicsProgramming',
+      musicName: '(Video Demo Music: Diamond Eyes - Inner Wave)',
       media: {
         images: [
-          'images/DissProj/Img1.png',
-          'images/DissProj/Img2.png',
-          'images/DissProj/Img3.png',
+          'images/GraphicsProgramming/Image1.png',
+          'images/GraphicsProgramming/Image2.png',
+          'images/GraphicsProgramming/Image3.png',
         ],
-        video: 'videos/DissVid.mp4'
+        video: 'videos/GraphicsProgramming.mp4'
       }
     },
     {
@@ -60,11 +60,30 @@ const projectsData = [
       }
     },
     {
+      title: 'Dissertation Artefact (2023)',
+      highlightDesc: 'Computationally efficient N-Body Gravitational simulations in a videogame setting',
+      mainFocus: 'N-body gravitational simulation using Barnes-Hut',
+      developmentEnvironment: 'Unreal Engine, C++',
+      description: 'Dissertation Artefact for the Computer Game Application Development course on Abertay University. This project explores the implementation of the Barnes-Hut algorithm to tackle the N-Body Problem. This framework is then applied into- and evaluated in the context of a simulation, as well as videogames',
+      notableFeatures: 'Barnes-Hut algoruthm, extensive UI, sandbox and videogame example',
+      downloadVers: 'Github Download (Source Code & Executable):',
+      downloadLink: 'https://github.com/martinpaule/DissertationProject',
+      musicName: '(Video Demo Music: Hidria Spacefolk - Amos Ame)',
+      media: {
+        images: [
+          'images/DissProj/Img1.png',
+          'images/DissProj/Img2.png',
+          'images/DissProj/Img3.png',
+        ],
+        video: 'videos/DissVid.mp4'
+      }
+    },
+    {
       title: 'Peer-To-Peer Tanks (2021)',
       highlightDesc: 'Simple tank game run on a custom-built peer-to-peer network',
       mainFocus: 'Developing a netowrked application',
       developmentEnvironment: 'C++, SFML library',
-      description: 'Final project for a Networking module at 3rd year CGAD at Abertay. The network connects (and communicates) using TCP sockets on a self-built peer-to-peer server structure',
+      description: 'Final project for a Networking module at 3rd year at Abertay University. The network connects (and communicates) using TCP sockets on a self-built peer-to-peer server structure',
       notableFeatures: 'peer-to-peer, interpolation, prediction',
       downloadVers: 'Github Download (Source Code):',
       downloadLink: 'https://github.com/martinpaule/Networking_Project',
@@ -249,52 +268,33 @@ const projectsData = [
     });
   });
 
-
-  //will show this repo's commits
-  /* 
-  fetch('https://api.github.com/repos/martinpaule/martinpaule.github.io/commits')
-  .then(response => response.json())
-  .then(data => {
-    const commitList = document.getElementById('commit-list');
-    data.forEach(commit => {
-      const commitTitle = commit.commit.message;
-      const listItem = document.createElement('li');
-      listItem.textContent = commitTitle;
-      commitList.appendChild(listItem);
-    });
-  })
-  .catch(error => {
-    console.log('Error:', error);
-  });
-  */
-
   let images = document.querySelectorAll('.project-media img');
-let modal = document.getElementById('mediaModal');
-let modalImg = document.getElementById('modalImage');
-let closeBtn = document.querySelector('.close-btn');
+  let modal = document.getElementById('mediaModal');
+  let modalImg = document.getElementById('modalImage');
+  let closeBtn = document.querySelector('.close-btn');
 
-// Function to open the modal with an image or video
-function openModal(src, type) {
-  if (type === 'image') {
-    modalImg.src = src;
-    modalImg.style.display = 'block';
-  } 
-  modal.style.display = 'block';
-}
+  // Function to open the modal with an image or video
+  function openModal(src, type) {
+    if (type === 'image') {
+      modalImg.src = src;
+      modalImg.style.display = 'block';
+    } 
+    modal.style.display = 'block';
+  }
 
-// Attach event listeners to images and videos
-images.forEach(img => {
-  img.addEventListener('click', function() {
-    openModal(this.src, 'image');
+  // Attach event listeners to images and videos
+  images.forEach(img => {
+    img.addEventListener('click', function() {
+      openModal(this.src, 'image');
+    });
   });
-});
 
 
-// Close the modal
-closeBtn.addEventListener('click', function() {
-  modal.style.display = 'none';
-  modalImg.src = '';
-});
+  // Close the modal
+  closeBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+    modalImg.src = '';
+  });
 
 
 };
